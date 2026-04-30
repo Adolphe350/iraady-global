@@ -252,7 +252,7 @@ async function loadProjects() {
 
 function setupContactMailto() {
   const form = document.getElementById("contact-form");
-  if (!form) {
+  if (!form || !form.action.toLowerCase().startsWith("mailto:")) {
     return;
   }
 
@@ -274,6 +274,35 @@ function setupContactMailto() {
       }\nBudget: ${budget || "N/A"}\n\nMessage:\n${message}`
     );
     window.location.href = `mailto:hello@iraady.com?subject=${subject}&body=${body}`;
+  });
+}
+
+function setupCookieBanner() {
+  const banner = document.getElementById("cookie-banner");
+  const acknowledge = document.getElementById("cookie-ack");
+  if (!banner || !acknowledge) {
+    return;
+  }
+
+  let isAcknowledged = false;
+  try {
+    isAcknowledged = window.localStorage.getItem("iraady_cookie_ack") === "1";
+  } catch (error) {
+    isAcknowledged = false;
+  }
+
+  if (isAcknowledged) {
+    return;
+  }
+
+  banner.hidden = false;
+  acknowledge.addEventListener("click", () => {
+    try {
+      window.localStorage.setItem("iraady_cookie_ack", "1");
+    } catch (error) {
+      // Ignore storage write failures and keep banner dismiss behavior.
+    }
+    banner.hidden = true;
   });
 }
 
@@ -435,6 +464,7 @@ function setYear() {
 async function init() {
   setupNavToggle();
   setupContactMailto();
+  setupCookieBanner();
   setupEvents();
   setYear();
 
