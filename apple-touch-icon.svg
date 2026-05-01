@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Iraady Apple touch icon</title>
+  <desc id="desc">Iraady monogram for mobile home screen icon.</desc>
+  <defs>
+    <linearGradient id="icon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c778dd" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="180" height="180" rx="42" fill="#0a0a0f" />
+  <rect x="18" y="18" width="144" height="144" rx="34" fill="url(#icon)" opacity="0.28" />
+  <path d="M59 46h20v88H59z" fill="#ffffff" />
+  <path d="M88 46h20c15 0 25 8 25 23 0 10-5 16-12 19l13 29h-23l-12-27h8c5 0 10-3 10-9 0-7-6-10-12-10H88z" fill="#ffffff" />
+</svg>

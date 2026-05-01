@@ -262,16 +262,17 @@ function setupContactMailto() {
     const formData = new FormData(form);
     const name = (formData.get("name") || "").toString().trim();
     const email = (formData.get("email") || "").toString().trim();
+    const phone = (formData.get("phone") || "").toString().trim();
     const company = (formData.get("company") || "").toString().trim();
-    const projectType = (formData.get("projectType") || "").toString().trim();
     const budget = (formData.get("budget") || "").toString().trim();
+    const timeline = (formData.get("timeline") || "").toString().trim();
     const message = (formData.get("message") || "").toString().trim();
 
-    const subject = encodeURIComponent(`${projectType || "Project"} inquiry from ${name}`);
+    const subject = encodeURIComponent(`Project inquiry from ${name}`);
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company || "N/A"}\nProject Type: ${
-        projectType || "N/A"
-      }\nBudget: ${budget || "N/A"}\n\nMessage:\n${message}`
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "N/A"}\nCompany: ${company || "N/A"}\nBudget: ${
+        budget || "N/A"
+      }\nTimeline: ${timeline || "N/A"}\n\nMessage:\n${message}`
     );
     window.location.href = `mailto:hello@iraady.com?subject=${subject}&body=${body}`;
   });

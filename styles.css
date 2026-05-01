@@ -361,6 +361,21 @@ img {
   padding: 1.4rem 0 1rem;
 }
 
+.trust-bar {
+  padding: 0.35rem 0 0.8rem;
+}
+
+.trust-bar p {
+  margin: 0;
+  border: 1px solid rgba(199, 120, 221, 0.45);
+  border-radius: 999px;
+  background: rgba(19, 19, 26, 0.92);
+  padding: 0.7rem 1rem;
+  color: #d4d4d8;
+  font-size: 0.86rem;
+  text-align: center;
+}
+
 .metric-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -998,6 +1013,37 @@ img {
   color: var(--muted);
 }
 
+.faq-section {
+  padding-top: 4.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.faq-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.faq-card {
+  border: 1px solid var(--border);
+  border-radius: 0.95rem;
+  background: var(--card);
+  padding: 1rem;
+}
+
+.faq-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.faq-card p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -1328,6 +1374,20 @@ img {
   cursor: pointer;
 }
 
+.noscript-note {
+  margin: 1rem 24px 0;
+  border: 1px solid #3f3f46;
+  border-radius: 0.9rem;
+  background: rgba(10, 10, 15, 0.94);
+  color: #d4d4d8;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.84rem;
+}
+
+.noscript-note a {
+  color: var(--violet);
+}
+
 .whatsapp-float {
   position: fixed;
   right: 24px;
@@ -1485,6 +1545,7 @@ img {
   }
 
   .services-grid,
+  .faq-grid,
   .process-grid,
   .team-grid,
   .metric-grid {
@@ -1548,6 +1609,7 @@ img {
 
   .products-grid,
   .services-grid,
+  .faq-grid,
   .project-grid,
   .clients-grid,
   .team-grid,
@@ -1600,6 +1662,11 @@ img {
     bottom: 86px;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .noscript-note {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .whatsapp-float {
