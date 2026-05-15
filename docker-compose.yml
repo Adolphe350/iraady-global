@@ -5,8 +5,8 @@ services:
     expose:
       - "80"
     volumes:
-      - ./:/usr/share/nginx/html:ro
-    working_dir: /usr/share/nginx/html
+      - ./:/site:ro
+    working_dir: /site
     command:
       - /bin/sh
       - -c
@@ -15,8 +15,9 @@ services:
         server {
           listen 80;
           server_name _;
-          root /usr/share/nginx/html;
+          root /site;
           index index.html;
+          autoindex off;
 
           location / {
             try_files $$uri $$uri/ /index.html;
