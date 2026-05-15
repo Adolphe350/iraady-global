@@ -695,18 +695,25 @@ img {
 }
 
 .team-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1rem;
   align-items: stretch;
+}
+
+.team-grid .team-card {
+  width: 100%;
 }
 
 .team-join-wrap {
   margin-top: 1rem;
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
 .team-join-wrap .team-join {
-  max-width: 420px;
+  width: min(100%, 420px);
 }
 
 .pricing-grid {
@@ -1559,7 +1566,7 @@ img {
   }
 
   .team-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
   }
 
   .footer-grid {
@@ -1622,12 +1629,15 @@ img {
   .faq-grid,
   .project-grid,
   .clients-grid,
-  .team-grid,
   .pricing-grid,
   .shop-grid,
   .blog-grid,
   .process-grid,
   .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
