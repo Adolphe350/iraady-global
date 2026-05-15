@@ -422,7 +422,7 @@ function setupEvents() {
       customizations: {
         title: "Buy " + projectName,
         description: "Full Source Code • Commercial License",
-        logo: "https://iraady.com/logo.svg",
+        logo: "https://iraady.com/logo.jpg",
       },
       callback: function (response) {
         if (response.status === "successful") {
