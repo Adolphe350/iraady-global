@@ -746,17 +746,14 @@ img {
   padding: 1.1rem;
 }
 
-.team-avatar {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.8rem;
-  display: grid;
-  place-items: center;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #ffffff;
-  background: linear-gradient(130deg, var(--violet), var(--emerald));
+.team-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
 }
 
 .team-card h3 {
