@@ -107,15 +107,11 @@ img {
 }
 
 .brand-mark {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.6rem;
-  display: grid;
-  place-items: center;
-  color: #0a0a0f;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 700;
-  background: linear-gradient(130deg, var(--violet), var(--emerald));
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.65rem;
+  object-fit: cover;
+  display: block;
 }
 
 .nav-toggle {
@@ -700,6 +696,17 @@ img {
 
 .team-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.team-join-wrap {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+.team-join-wrap .team-join {
+  max-width: 420px;
 }
 
 .pricing-grid {
