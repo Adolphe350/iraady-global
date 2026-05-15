@@ -2,8 +2,8 @@ services:
   web:
     image: nginx:alpine
     restart: unless-stopped
-    ports:
-      - "80:80"
+    expose:
+      - "80"
     volumes:
       - ./:/usr/share/nginx/html:ro
     working_dir: /usr/share/nginx/html
