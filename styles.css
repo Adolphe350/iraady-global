@@ -1554,9 +1554,12 @@ img {
   .services-grid,
   .faq-grid,
   .process-grid,
-  .team-grid,
   .metric-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .footer-grid {
