@@ -765,12 +765,15 @@ img {
 
 .team-photo {
   width: 100%;
+  height: 260px;
   aspect-ratio: 1 / 1;
   border-radius: 18px;
   object-fit: cover;
+  object-position: center;
   display: block;
   margin-bottom: 1rem;
   border: 1px solid var(--border);
+  background: #111118;
 }
 
 .team-card h3 {
@@ -1569,6 +1572,10 @@ img {
     grid-template-columns: repeat(3, minmax(220px, 1fr));
   }
 
+  .team-photo {
+    height: 220px;
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1639,6 +1646,11 @@ img {
 
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-photo {
+    height: auto;
+    min-height: 220px;
   }
 
   .section {
