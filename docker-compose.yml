@@ -1,0 +1,26 @@
+services:
+  web:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    working_dir: /usr/share/nginx/html
+    command:
+      - /bin/sh
+      - -c
+      - |
+        cat >/etc/nginx/conf.d/default.conf <<'EOF'
+        server {
+          listen 80;
+          server_name _;
+          root /usr/share/nginx/html;
+          index index.html;
+
+          location / {
+            try_files $uri $uri/ /index.html;
+          }
+        }
+        EOF
+        nginx -g 'daemon off;'
