@@ -697,8 +697,8 @@ img {
 .team-grid {
   margin-top: 1.8rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
   align-items: stretch;
 }
 
@@ -765,11 +765,10 @@ img {
 
 .team-photo {
   width: 100%;
-  height: 260px;
   aspect-ratio: 1 / 1;
   border-radius: 18px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   display: block;
   margin-bottom: 1rem;
   border: 1px solid var(--border);
@@ -1569,11 +1568,7 @@ img {
   }
 
   .team-grid {
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
-  }
-
-  .team-photo {
-    height: 220px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-grid {
@@ -1645,12 +1640,7 @@ img {
   }
 
   .team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .team-photo {
-    height: auto;
-    min-height: 220px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .section {
