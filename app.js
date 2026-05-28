@@ -274,7 +274,7 @@ function setupContactMailto() {
         budget || "N/A"
       }\nTimeline: ${timeline || "N/A"}\n\nMessage:\n${message}`
     );
-    window.location.href = `mailto:hello@iraady.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@iraady.com?subject=${subject}&body=${body}`;
   });
 }
 
