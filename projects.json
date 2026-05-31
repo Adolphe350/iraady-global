@@ -8,7 +8,7 @@
     "image": "https://api.microlink.io/?url=https://bizpro.rw&screenshot=true&meta=false&embed=screenshot.url",
     "techs": [],
     "hasImage": true,
-    "price": 599.99
+    "price": 3500
   },
   {
     "id": "ngoplus",
@@ -19,7 +19,7 @@
     "image": "https://api.microlink.io/?url=https://ngoplus.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
     "techs": [],
     "hasImage": true,
-    "price": 799.99
+    "price": 3000
   },
   {
     "id": "kimuse",
@@ -133,14 +133,14 @@
   },
   {
     "id": "uwezoradio",
-    "group": "Personal",
+    "group": "Client",
     "name": "Uwezo Radio",
     "url": "https://uwezoradio.rw/",
     "description": "Live radio platform and website experience for Uwezo Radio, built to stream content online with a clean listening interface.",
     "image": "https://api.microlink.io/?url=https://uwezoradio.rw/&screenshot=true&meta=false&embed=screenshot.url",
     "techs": [],
     "hasImage": true,
-    "price": 249.99
+    "niche": "📻 Media & Broadcasting"
   },
   {
     "id": "openradio",
@@ -188,36 +188,36 @@
   },
   {
     "id": "oslearningiraady",
-    "group": "Personal",
+    "group": "Client",
     "name": "OS Learning",
     "url": "https://oslearning.iraady.com/",
     "description": "Digital learning and education platform built to deliver accessible online learning experiences and academic support.",
     "image": "https://api.microlink.io/?url=https://oslearning.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
     "techs": [],
     "hasImage": true,
-    "price": 249.99
+    "niche": "🎓 Education & Learning"
   },
   {
     "id": "oslearningspace",
-    "group": "Personal",
+    "group": "Client",
     "name": "OS Learning Space",
     "url": "https://oslearning.space",
     "description": "A dedicated online learning space extending the OS Learning ecosystem with accessible educational resources and tools.",
     "image": "https://api.microlink.io/?url=https://oslearning.space&screenshot=true&meta=false&embed=screenshot.url",
     "techs": [],
     "hasImage": true,
-    "price": 249.99
+    "niche": "🎓 Education & Learning"
   },
   {
     "id": "kinezarw",
-    "group": "Personal",
+    "group": "Client",
     "name": "Kineza Rwanda",
     "url": "https://kineza.rw/",
     "description": "Kineza Rwanda web platform built to support digital language learning and broader educational access online.",
     "image": "https://api.microlink.io/?url=https://kineza.rw/&screenshot=true&meta=false&embed=screenshot.url",
     "techs": [],
     "hasImage": true,
-    "price": 249.99
+    "niche": "🗣️ Language Learning & Education"
   },
   {
     "id": "ikinamico",
