@@ -42,7 +42,7 @@
 
 .kpis { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 22px; }
 @media (min-width: 1000px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
-.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 16px 18px; border-top: 4px solid var(--c, var(--line)); }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 16px 18px; }
 .kpi-v { margin-top: 8px; font-family: var(--mono); font-size: 1.7rem; font-weight: 600; letter-spacing: -.04em; }
 .kpi-s { color: var(--muted); font-size: .82rem; }
 
@@ -140,3 +140,5 @@ table.t { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .toast { position: fixed; left: 50%; bottom: 24px; z-index: 100; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; padding: 11px 16px; border-radius: 12px; background: var(--band); color: var(--band-text); font-weight: 600; box-shadow: var(--shadow-3); transition: opacity .2s, transform .2s var(--ease); }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 [data-theme="dark"] .a-link.active { background: var(--ink); color: var(--ground); }
+.a-link .dot { background: var(--line-strong) !important; }
+.a-link.active .dot { background: currentColor !important; }

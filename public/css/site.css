@@ -421,3 +421,12 @@ textarea { resize: vertical; }
 .prod-card { padding-left: 28px; }
 .prod-name { font-size: 1.6rem; letter-spacing: -.035em; }
 .btn { border-radius: 10px; }
+
+/* No coloured edges on cards: plain surfaces, like Transfer. */
+.prod-bar { display: none; }
+.prod-card { padding-left: 24px; }
+.prod-card:hover { border-color: var(--line-strong); }
+.process li { border-top: 1px solid var(--line); }
+.tool-dot { background: var(--ink); opacity: .85; border-radius: 3px; }
+.tool:hover { border-color: var(--line-strong); }
+.kpi { border-top: 1px solid var(--line); }
