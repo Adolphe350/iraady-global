@@ -6,3 +6,12 @@ services:
     restart: unless-stopped
     expose:
       - "80"
+    environment:
+      - ADMIN_EMAIL=${ADMIN_EMAIL:-info@iraady.com}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+      - SESSION_SECRET=${SESSION_SECRET}
+    volumes:
+      - iraady-data:/data
+
+volumes:
+  iraady-data:

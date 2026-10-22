@@ -1,0 +1,749 @@
+{
+ "site": {
+  "eyebrow": "London · Kigali · Software studio since 2021",
+  "heroTitle": "We build the software global teams actually use.",
+  "heroSub": "Iraady Ltd is a British-Rwandan product-led software & AI studio headquartered in London with an operating office in Kigali. We operate BizPro, NgoPlus and a portfolio of live SaaS — and we partner on projects from $1K to enterprise.",
+  "trustLine": "UK-registered company · Rwanda operating office · Secure Flutterwave checkout · GDPR-aware · Source-code licenses",
+  "contactEmail": "info@iraady.com",
+  "whatsapp": "250787171273",
+  "companyNumber": "16951380",
+  "aboutTitle": "British-Rwandan. Product-led. Built to ship globally.",
+  "about": "Iraady Ltd is a British-Rwandan software and AI studio headquartered in London with an operating office at Norrsken House, Kigali. Since 2021 we've shipped 30+ products across SaaS, mobile and AI — including our flagship products BizPro and NgoPlus, serving businesses and NGOs across 15+ countries. We partner with ambitious teams worldwide on projects from $1K to enterprise.",
+  "quote": "We run our own SaaS — so when we build yours, we already know where it breaks. That's the difference between an agency and an operator.",
+  "quoteBy": "Adolphe Irankunda, Founder, Iraady Ltd",
+  "markets": "UK · Rwanda · Uganda · Kenya · Nigeria · DRC · France · Tanzania · Ghana · South Africa · and 5+ more",
+  "linkedin": "",
+  "twitter": "",
+  "github": ""
+ },
+ "metrics": [
+  {
+   "value": "2,400+",
+   "label": "Businesses on BizPro"
+  },
+  {
+   "value": "180+",
+   "label": "NGOs on NgoPlus"
+  },
+  {
+   "value": "99.9%",
+   "label": "Uptime"
+  },
+  {
+   "value": "12",
+   "label": "Countries served"
+  }
+ ],
+ "products": [
+  {
+   "id": "ngoplus",
+   "name": "NgoPlus",
+   "kind": "Flagship",
+   "strand": "green",
+   "summary": "All-in-one NGO platform for fundraising, project operations, M&E and reporting.",
+   "url": "https://ngoplus.org",
+   "status": "Live"
+  },
+  {
+   "id": "bizpro",
+   "name": "BizPro",
+   "kind": "Flagship",
+   "strand": "navy",
+   "summary": "Business management platform: POS, inventory, invoicing, finance and payroll for growing teams.",
+   "url": "https://bizpro.rw",
+   "status": "Live"
+  },
+  {
+   "id": "kimuse",
+   "name": "Kimuse",
+   "kind": "Flagship",
+   "strand": "sky",
+   "summary": "AI model hub with unified access to many tools in one subscription.",
+   "url": "https://kimuse.rw",
+   "status": "Live"
+  },
+  {
+   "id": "transfer",
+   "name": "Fast Transfer",
+   "kind": "Tool",
+   "strand": "lime",
+   "summary": "Send files up to 50 GB with one link. Uploads resume after a dropped connection.",
+   "url": "https://transfer.iraady.com",
+   "status": "Live"
+  },
+  {
+   "id": "compresspro",
+   "name": "CompressPro",
+   "kind": "Tool",
+   "strand": "sky",
+   "summary": "Shrink video files for sharing and the web without visible loss.",
+   "url": "https://compresspro.iraady.com",
+   "status": "Live"
+  },
+  {
+   "id": "convertpro",
+   "name": "ConvertPro",
+   "kind": "Tool",
+   "strand": "yellow",
+   "summary": "Convert documents, images, audio and video between formats.",
+   "url": "https://convertpro.iraady.com",
+   "status": "Live"
+  },
+  {
+   "id": "cvmaker",
+   "name": "CV Maker",
+   "kind": "Tool",
+   "strand": "green",
+   "summary": "Write a professional CV with AI help and download it as a polished PDF.",
+   "url": "https://cvmaker.rw",
+   "status": "Live"
+  }
+ ],
+ "services": [
+  {
+   "title": "SaaS engineering",
+   "summary": "Production-grade web platforms. Next.js, Node, Postgres, cloud-native."
+  },
+  {
+   "title": "AI integration",
+   "summary": "LLM-powered features, agents, RAG systems and automation pipelines."
+  },
+  {
+   "title": "Mobile apps",
+   "summary": "iOS and Android with React Native / Expo, shipped to the App Store and Google Play."
+  },
+  {
+   "title": "Product design",
+   "summary": "UX, UI and design systems. Interfaces people actually like using."
+  }
+ ],
+ "process": [
+  {
+   "title": "Discover",
+   "summary": "We map the problem."
+  },
+  {
+   "title": "Design",
+   "summary": "Prototype and validate."
+  },
+  {
+   "title": "Build",
+   "summary": "Ship production code."
+  },
+  {
+   "title": "Operate",
+   "summary": "Monitor, iterate, grow."
+  }
+ ],
+ "team": [
+  {
+   "name": "Adolphe Irankunda",
+   "role": "CEO & Fullstack Developer",
+   "location": "Rwanda",
+   "bio": "Founder of Iraady, leading product, strategy, execution and fullstack development across the company.",
+   "photo": "/assets/team/adolphe-irankunda.jpg"
+  },
+  {
+   "name": "Crispus Okoth",
+   "role": "CTO & Fullstack Developer",
+   "location": "Kenya",
+   "bio": "Leads engineering architecture and helps ship fullstack systems across Iraady products.",
+   "photo": "/assets/team/crispus-okoth.jpg"
+  },
+  {
+   "name": "Sheila Oreni",
+   "role": "Sales Officer",
+   "location": "Kenya",
+   "bio": "Builds customer relationships and supports outreach that turns conversations into opportunities.",
+   "photo": "/assets/team/sheila-oreni.jpg"
+  },
+  {
+   "name": "Sandra Mwinkum Dery",
+   "role": "Marketing Officer",
+   "location": "Ghana",
+   "bio": "Supports marketing, brand visibility and communications across Iraady initiatives.",
+   "photo": "/assets/team/sandra-mwinkum-dery.jpg"
+  },
+  {
+   "name": "Imaniriyo Baptitse",
+   "role": "Frontend Developer",
+   "location": "Rwanda",
+   "bio": "Builds user-facing experiences and interfaces across Iraady web products.",
+   "photo": "/assets/team/imaniiriyo-baptitse.jpg"
+  },
+  {
+   "name": "Carol Nyaguthii",
+   "role": "Backend Developer",
+   "location": "Kenya",
+   "bio": "Builds backend systems and supports reliable product infrastructure across Iraady platforms.",
+   "photo": "/assets/team/carol-nyaguthii.jpg"
+  }
+ ],
+ "pricing": [
+  {
+   "name": "Starter",
+   "price": "$1,000",
+   "best": "Landing pages, small MVPs, quick integrations.",
+   "items": [
+    "1–2 week engagement",
+    "1 designer + 1 engineer",
+    "Source code delivered",
+    "30-day support"
+   ],
+   "popular": false
+  },
+  {
+   "name": "Growth",
+   "price": "$10,000",
+   "best": "Full product builds, mobile apps, AI features.",
+   "items": [
+    "4–8 week engagement",
+    "Full team",
+    "Figma designs + code + deployment",
+    "90-day support",
+    "Analytics setup"
+   ],
+   "popular": true
+  },
+  {
+   "name": "Enterprise",
+   "price": "$30,000",
+   "best": "Multi-product platforms, complex AI systems, high-scale SaaS.",
+   "items": [
+    "3+ month engagement",
+    "Dedicated squad",
+    "Architecture + DevOps + SRE",
+    "12-month SLA",
+    "Ongoing operations"
+   ],
+   "popular": false
+  }
+ ],
+ "faq": [
+  {
+   "q": "What do projects usually cost?",
+   "a": "Most custom work starts around $1K and scales with scope. We share a clear estimate after the discovery call."
+  },
+  {
+   "q": "How long does delivery take?",
+   "a": "Landing pages can ship in 1–2 weeks, while full SaaS and AI products usually take 4–12+ weeks."
+  },
+  {
+   "q": "Do you work internationally?",
+   "a": "Yes. We run projects remotely across time zones from our London headquarters and Kigali operating office."
+  },
+  {
+   "q": "What license comes with source-code purchases?",
+   "a": "Each purchase includes a commercial-use license for your organisation. Reselling raw source code is not permitted."
+  },
+  {
+   "q": "How do payments work?",
+   "a": "Checkout is processed securely through Flutterwave in USD. For larger builds, we can split milestones by agreement."
+  },
+  {
+   "q": "Do you provide support and maintenance?",
+   "a": "Yes. Every project includes a defined support window, and longer maintenance retainers are available."
+  }
+ ],
+ "blog": [
+  {
+   "date": "2026-03",
+   "title": "Why we built BizPro in Kigali, not San Francisco",
+   "summary": "What proximity to users changed in our roadmap, support loops and product decisions from day one.",
+   "url": ""
+  },
+  {
+   "date": "2026-02",
+   "title": "Running a SaaS in Rwanda: latency, payments and real users",
+   "summary": "The practical constraints we handle weekly and the infrastructure patterns that keep products stable.",
+   "url": ""
+  },
+  {
+   "date": "2026-01",
+   "title": "The AI stack we use to ship features 3x faster",
+   "summary": "A look at our LLM workflow, guardrails, and how we blend automation with production discipline.",
+   "url": ""
+  },
+  {
+   "date": "2025-12",
+   "title": "From agency to product: how owning NgoPlus changed our client work",
+   "summary": "Operating our own SaaS reshaped our delivery model, pricing and long-term client partnerships.",
+   "url": ""
+  }
+ ],
+ "offices": [
+  {
+   "name": "London",
+   "tag": "Headquarters",
+   "flag": "GB",
+   "lines": [
+    "5 Brayford Square",
+    "London E1 0SG",
+    "United Kingdom"
+   ],
+   "phone": "+44 7848 502889",
+   "hours": "Mon–Fri 9:00–18:00 GMT",
+   "map": "https://maps.google.com/?q=5+Brayford+Square+London+E1+0SG"
+  },
+  {
+   "name": "Kigali",
+   "tag": "Operating office",
+   "flag": "RW",
+   "lines": [
+    "Norrsken House Kigali",
+    "1 KN 78 St, Kigali",
+    "Rwanda"
+   ],
+   "phone": "+250 787 171 273",
+   "hours": "Mon–Fri 8:00–17:00 CAT",
+   "map": "https://maps.google.com/?q=Norrsken+House+Kigali"
+  }
+ ],
+ "projects": [
+  {
+   "id": "bizpro",
+   "group": "Personal",
+   "name": "BizPro – Business Management Platform",
+   "url": "https://bizpro.rw",
+   "description": "Professional business management web app that helps businesses track expenses, income, invoice creation, and streamline financial operations.",
+   "image": "https://api.microlink.io/?url=https://bizpro.rw&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 3500
+  },
+  {
+   "id": "ngoplus",
+   "group": "Personal",
+   "name": "NGOPlus – All-in-One NGO Platform",
+   "url": "https://ngoplus.iraady.com",
+   "description": "Empowering nonprofits with AI-driven tools for fundraising, reporting, analytics, and community engagement—all in one place. Built by Iraady Ltd to streamline NGO operations with limited resources.",
+   "image": "https://api.microlink.io/?url=https://ngoplus.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 3000
+  },
+  {
+   "id": "kimuse",
+   "group": "Personal",
+   "name": "Kimuse – AI Models Hub",
+   "url": "https://kimuse.rw",
+   "description": "23 AI models in one subscription. Access multiple AI tools and models through a single, unified platform.",
+   "image": "https://api.microlink.io/?url=https://kimuse.rw&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 299.99
+  },
+  {
+   "id": "compresspro",
+   "group": "Personal",
+   "name": "CompressPro – Video & File Compression SaaS",
+   "url": "https://compresspro.iraady.com",
+   "description": "High-performance compression tool handling videos up to 20GB. Cloud processing, shareable links, zero quality loss. FREE tier: 100MB browser compression. PRO: $9.99/mo unlimited cloud processing.",
+   "image": "https://api.microlink.io/?url=https://compresspro.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 499.99
+  },
+  {
+   "id": "convertpro",
+   "group": "Personal",
+   "name": "ConvertPro – Universal File Converter",
+   "url": "https://convertpro.iraady.com",
+   "description": "54 conversion tools in one platform. PDF, Word, Excel, Image, Audio, Video conversions with smart processing. FREE: 3 conversions/day. PRO: $7.99/mo unlimited access to all tools.",
+   "image": "https://api.microlink.io/?url=https://convertpro.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 449.99
+  },
+  {
+   "id": "vaultiraady",
+   "group": "Personal",
+   "name": "Business File Management",
+   "url": "https://vault.iraady.com/",
+   "description": "A simple business vault that keeps your business files organised and accessible anywhere, anytime.",
+   "image": "https://api.microlink.io/?url=https://vault.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 149.99
+  },
+  {
+   "id": "apiiraady",
+   "group": "Personal",
+   "name": "AI API Management for Developers",
+   "url": "https://api.iraady.com",
+   "description": "Pay-as-you-go AI API platform giving developers access to 20+ AI models at retail prices. Build and integrate AI into your apps with simple, affordable APIs.",
+   "image": "https://api.microlink.io/?url=https://api.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 449.99
+  },
+  {
+   "id": "cviraady",
+   "group": "Personal",
+   "name": "ATS CV Builder",
+   "url": "https://cv.iraady.com",
+   "description": "ATS-friendly CV builder helping professionals create optimized resumes that pass applicant tracking systems with modern templates.",
+   "image": "https://api.microlink.io/?url=https://cv.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 299.99
+  },
+  {
+   "id": "scrapeiraady",
+   "group": "Personal",
+   "name": "Website & Email Scraper",
+   "url": "https://scrape.iraady.com/",
+   "description": "Powerful web scraping tool for extracting website data and email addresses. Built for marketers, researchers, and developers who need reliable data extraction.",
+   "image": "https://api.microlink.io/?url=https://scrape.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 249.99
+  },
+  {
+   "id": "fitio",
+   "group": "Personal",
+   "name": "Fitio – Fitness Tracking App",
+   "url": "https://fitio.iraady.com/",
+   "description": "Track workouts, count calories, and achieve your fitness goals with the most powerful training app. Build the body you deserve.",
+   "image": "https://api.microlink.io/?url=https://fitio.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 249.99
+  },
+  {
+   "id": "transferiraady",
+   "group": "Personal",
+   "name": "Secure File Transfer",
+   "url": "https://transfer.iraady.com",
+   "description": "Fast, secure file sharing platform with end-to-end encryption for seamless document and media transfer.",
+   "image": "https://api.microlink.io/?url=https://transfer.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 249.99
+  },
+  {
+   "id": "marketingai",
+   "group": "Personal",
+   "name": "Marketing AI – Smart Marketing Assistant",
+   "url": "https://marketingai.iraady.com/",
+   "description": "AI-powered marketing assistant that helps businesses create compelling content, analyze campaigns, and optimize their marketing strategies.",
+   "image": "https://api.microlink.io/?url=https://marketingai.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 250
+  },
+  {
+   "id": "uwezoradio",
+   "group": "Client",
+   "name": "Uwezo Radio",
+   "url": "https://uwezoradio.rw/",
+   "description": "Live radio platform and website experience for Uwezo Radio, built to stream content online with a clean listening interface.",
+   "image": "https://api.microlink.io/?url=https://uwezoradio.rw/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "niche": "📻 Media & Broadcasting"
+  },
+  {
+   "id": "openradio",
+   "group": "Personal",
+   "name": "OpenRadio",
+   "url": "https://openradio.iraady.com/",
+   "description": "Modern online radio platform for streaming, station presentation, and digital audience reach.",
+   "image": "https://api.microlink.io/?url=https://openradio.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 249.99
+  },
+  {
+   "id": "softradio",
+   "group": "Personal",
+   "name": "SoftRadio",
+   "url": "https://softradio.iraady.com/",
+   "description": "Online radio website and live streaming experience designed for always-on listening and simple station management.",
+   "image": "https://api.microlink.io/?url=https://softradio.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 249.99
+  },
+  {
+   "id": "whatsappbot",
+   "group": "Personal",
+   "name": "WhatsApp Bot Platform",
+   "url": "https://whatsapp.iraady.com/",
+   "description": "WhatsApp automation platform for customer communication, smart replies, and business workflow integration.",
+   "image": "https://api.microlink.io/?url=https://whatsapp.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 299.99
+  },
+  {
+   "id": "eduplatform",
+   "group": "Personal",
+   "name": "Edu Platform",
+   "url": "https://edu.iraady.com/",
+   "description": "AI-powered university application assistant helping students apply to universities abroad or locally with smarter guidance, planning, and application support.",
+   "image": "https://api.microlink.io/?url=https://edu.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 299.99
+  },
+  {
+   "id": "oslearningiraady",
+   "group": "Client",
+   "name": "OS Learning",
+   "url": "https://oslearning.iraady.com/",
+   "description": "Digital learning and education platform built to deliver accessible online learning experiences and academic support.",
+   "image": "https://api.microlink.io/?url=https://oslearning.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "niche": "🎓 Education & Learning"
+  },
+  {
+   "id": "oslearningspace",
+   "group": "Client",
+   "name": "OS Learning Space",
+   "url": "https://oslearning.space",
+   "description": "A dedicated online learning space extending the OS Learning ecosystem with accessible educational resources and tools.",
+   "image": "https://api.microlink.io/?url=https://oslearning.space&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "niche": "🎓 Education & Learning"
+  },
+  {
+   "id": "kinezarw",
+   "group": "Client",
+   "name": "Kineza Rwanda",
+   "url": "https://kineza.rw/",
+   "description": "Kineza Rwanda web platform built to support digital language learning and broader educational access online.",
+   "image": "https://api.microlink.io/?url=https://kineza.rw/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "niche": "🗣️ Language Learning & Education"
+  },
+  {
+   "id": "ikinamico",
+   "group": "Personal",
+   "name": "Ikinamico Archive",
+   "url": "https://ikinamico.iraady.com/",
+   "description": "Complete archive of all Ikinamico ever played. Preserving Rwanda's cultural heritage through digital archiving.",
+   "image": "https://api.microlink.io/?url=https://ikinamico.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "iraadystudio",
+   "group": "Personal",
+   "name": "Iraady Studio – Digital Innovation Hub",
+   "url": "https://iraady.app.kimuse.rw",
+   "description": "We craft digital experiences that drive results. Explore how we transform ideas into intuitive, impactful web solutions.",
+   "image": "https://api.microlink.io/?url=https://iraady.app.kimuse.rw&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "taskwiseai",
+   "group": "Personal",
+   "name": "TaskWise AI – Smart Project Manager",
+   "url": "https://task-wise-ai-production.vercel.app",
+   "description": "AI-powered project management system to optimize workflows, prioritize intelligently, and get things done faster.",
+   "image": "https://api.microlink.io/?url=https://task-wise-ai-production.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "spidermangame",
+   "group": "Personal",
+   "name": "Spiderman Game Center – Local Entertainment App",
+   "url": "https://spiderman-masaka.vercel.app",
+   "description": "Interactive web app built for the Masaka community in Kigali to explore fun, games, and local adventures.",
+   "image": "https://api.microlink.io/?url=https://spiderman-masaka.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "femhomchat",
+   "group": "Personal",
+   "name": "Fem&Hom AI Chat – Private STI Help Bot",
+   "url": "https://landingpagechatbot-k587arcm7-adolphe-irankundas-projects.vercel.app/",
+   "description": "Instant sexual health answers on WhatsApp. A 24/7, anonymous AI chatbot for young people seeking accurate health advice without judgment.",
+   "image": "https://api.microlink.io/?url=https://landingpagechatbot-k587arcm7-adolphe-irankundas-projects.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "fitio-mobile",
+   "group": "Mobile Apps",
+   "name": "Fitio – Personal Fitness App",
+   "url": "https://play.google.com/store/apps/details?id=com.fitio.app",
+   "description": "Track workouts, count calories, and achieve your fitness goals. Your personal fitness companion on the go.",
+   "image": "https://api.microlink.io/?url=https://fitio.iraady.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 299.99
+  },
+  {
+   "id": "speedify",
+   "group": "Mobile Apps",
+   "name": "Speedify – Distance & Calories Tracker",
+   "url": "https://play.google.com/store/apps/details?id=com.distancetracker.app",
+   "description": "Track your traveled distance and burned calories in real-time. Perfect for runners, cyclists, and fitness enthusiasts.",
+   "image": "https://api.microlink.io/?url=https://play.google.com/store/apps/details?id=com.distancetracker.app&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true,
+   "price": 299.99
+  },
+  {
+   "id": "kineza",
+   "group": "Mobile Apps",
+   "name": "Kineza Translate – Kinyarwanda Learning",
+   "url": "https://play.google.com/store/apps/details?id=com.adolphe350.kinezaapp",
+   "description": "Learn and translate Kinyarwanda with ease. An educational app for mastering Rwanda's native language through interactive lessons.",
+   "image": "https://api.microlink.io/?url=https://play.google.com/store/apps/details?id=com.adolphe350.kinezaapp&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "dadumaize",
+   "group": "Client",
+   "niche": "🌽 Agriculture & Food Production",
+   "name": "Dadu Maize – Premium Maize Flour",
+   "url": "https://dadu.iraady.com",
+   "description": "Premium maize flour producer in Musanze-Gakenke, Rwanda. High-quality, natural, and nutritious maize flour for families and businesses.",
+   "image": "https://api.microlink.io/?url=https://dadu.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "dadutours",
+   "group": "Client",
+   "niche": "🦍 Tourism & Travel",
+   "name": "DADU TOURS LTD – Discover Rwanda",
+   "url": "https://dadutours.iraady.com",
+   "description": "Rwanda's premier tour company offering gorilla trekking adventures, city tours, lake excursions, and unforgettable safari experiences.",
+   "image": "https://api.microlink.io/?url=https://dadutours.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "ccfrwanda",
+   "group": "Client",
+   "niche": "🚴 Sports & Youth Development",
+   "name": "Champion Cycling Foundation (CCF)",
+   "url": "https://ccfrwanda.iraady.com",
+   "description": "Transforming lives and communities through the power of cycling in Rwanda. Excellence, empowerment, and sustainable transport advocacy.",
+   "image": "https://api.microlink.io/?url=https://ccfrwanda.iraady.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "urukundo",
+   "group": "Client",
+   "niche": "🧠 Mental Health, SRHR & Youth Empowerment",
+   "name": "URUKUNDO Initiative",
+   "url": "https://urukundoinitiative.com",
+   "description": "Award-winning board game developer using gamification to deliver life skills and sexual health education across Africa.",
+   "image": "https://api.microlink.io/?url=https://urukundoinitiative.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "myvoicerwanda",
+   "group": "Client",
+   "niche": "🧠 Mental Health, SRHR & Youth Empowerment",
+   "name": "My Voice Rwanda",
+   "url": "https://myvoice.org.rw",
+   "description": "Helping youth recover from divorce-related trauma with confidence and optimism. Digital storytelling and healing journeys.",
+   "image": "https://api.microlink.io/?url=https://myvoice.org.rw&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "mdfc",
+   "group": "Client",
+   "niche": "🧠 Mental Health, SRHR & Youth Empowerment",
+   "name": "Rwanda Medical Doctors For Choice (MDFC)",
+   "url": "https://medicaldoctorsforchoice.org",
+   "description": "Digital advocacy for reproductive rights and body autonomy, led by pro-choice medical professionals.",
+   "image": "https://api.microlink.io/?url=https://medicaldoctorsforchoice.org&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "femhomhealth",
+   "group": "Client",
+   "niche": "👩🏾‍⚕️ Sexual Health & Wellbeing",
+   "name": "Fem & Hom Health",
+   "url": "https://landingpagechatbot-git-main-adolphe-irankundas-projects.vercel.app/",
+   "description": "Trusted platform for STI testing awareness, sexual health resources, and private consultations.",
+   "image": "https://api.microlink.io/?url=https://landingpagechatbot-git-main-adolphe-irankundas-projects.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "rulp",
+   "group": "Client",
+   "niche": "🧒🏾 Disability & Inclusion",
+   "name": "Rwanda Union of Little People (RULP)",
+   "url": "https://rulprwanda.org",
+   "description": "Empowering people with short stature through advocacy, education access, and poverty reduction initiatives.",
+   "image": "https://api.microlink.io/?url=https://rulprwanda.org&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "sfi",
+   "group": "Client",
+   "niche": "👩🏽‍🎓 Women & Girls Empowerment",
+   "name": "SFI Rwanda (Support for Inclusion)",
+   "url": "https://sfirwanda.org",
+   "description": "Changing lives of women and children born into vulnerability through education and economic empowerment.",
+   "image": "https://api.microlink.io/?url=https://sfirwanda.org&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "kfgrwanda",
+   "group": "Client",
+   "niche": "💰 Finance & Business",
+   "name": "KFG Rwanda – Debt Recovery & Research",
+   "url": "https://kfgrwanda.com",
+   "description": "A regional leader in debt management, due diligence, and financial training for sustainable business growth.",
+   "image": "https://api.microlink.io/?url=https://kfgrwanda.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "nezerwaplus",
+   "group": "Client",
+   "niche": "🥭 Local Manufacturing & Commerce",
+   "name": "NEZERWA PLUS LTD – Natural Juice & Jam Production",
+   "url": "https://nezerwaplus.com",
+   "description": "Promoting health and supporting farmers through quality, locally made fruit-based products under the Inota Plus brand.",
+   "image": "https://api.microlink.io/?url=https://nezerwaplus.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "iraablog",
+   "group": "Client",
+   "niche": "🗞️ Media & Storytelling",
+   "name": "Iraa Blog News Platform",
+   "url": "https://iraablog.com",
+   "description": "News, community stories, and youth-focused insights from a local Rwandan lens.",
+   "image": "https://api.microlink.io/?url=https://iraablog.com&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  },
+  {
+   "id": "ganzabertin",
+   "group": "Client",
+   "niche": "🌟 Leadership & Personal Branding",
+   "name": "Ganza K. Bertin",
+   "url": "https://bganza.com/",
+   "description": "Social Entrepreneur | Youth Advocate | Author | Tour Consultant. Inspiring intentional living and meaningful connections.",
+   "image": "https://api.microlink.io/?url=https://bganza.com/&screenshot=true&meta=false&embed=screenshot.url",
+   "techs": [],
+   "hasImage": true
+  }
+ ]
+}
