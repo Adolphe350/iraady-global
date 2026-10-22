@@ -79,7 +79,7 @@ table.t { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .status { font-family: var(--mono); font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
 .st-new { background: var(--yellow); color: #14151C; }
 .st-contacted, .st-reported { background: color-mix(in srgb, var(--sky) 20%, transparent); color: var(--ink); }
-.st-proposal, .st-verified { background: color-mix(in srgb, var(--navy) 16%, transparent); color: var(--accent); }
+.st-proposal, .st-verified { background: color-mix(in srgb, var(--sky) 18%, transparent); color: var(--ink); }
 .st-won, .st-delivered { background: var(--ok-wash); color: var(--ok); }
 .st-lost, .st-spam, .st-refunded { background: var(--ground-2); color: var(--muted); }
 
@@ -139,4 +139,4 @@ table.t { width: 100%; border-collapse: collapse; font-size: .9rem; }
 
 .toast { position: fixed; left: 50%; bottom: 24px; z-index: 100; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; padding: 11px 16px; border-radius: 12px; background: var(--band); color: var(--band-text); font-weight: 600; box-shadow: var(--shadow-3); transition: opacity .2s, transform .2s var(--ease); }
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
-[data-theme="dark"] .a-link.active { background: var(--accent); color: var(--on-primary); }
+[data-theme="dark"] .a-link.active { background: var(--ink); color: var(--ground); }

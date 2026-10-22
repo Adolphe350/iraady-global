@@ -314,7 +314,7 @@ async function handle(req, res) {
   }
   const f = within(PUBLIC, pathname);
   if (f) {
-    const cache = /\.(css|js)$/.test(f) ? 'public, max-age=300' : 'public, max-age=86400';
+    const cache = url.searchParams.has('v') ? 'public, max-age=31536000, immutable' : /\.(css|js)$/.test(f) ? 'no-cache' : 'public, max-age=86400';
     if (await serveFile(res, f, cache)) return;
   }
   return send(res, 404, render.page(await content(), {
