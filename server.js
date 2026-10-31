@@ -16,6 +16,7 @@ const crypto = require('crypto');
 const store = require('./lib/store');
 const auth = require('./lib/auth');
 const render = require('./lib/render');
+const renderV2 = require('./lib/render-v2');
 
 const PORT = Number(process.env.PORT) || 80;
 const PUBLIC = path.join(__dirname, 'public');
@@ -298,6 +299,16 @@ async function handle(req, res) {
     const html = render.page(await content(), { title: `${l.title} — Iraady Ltd`, description: `${l.title} for Iraady Ltd.`, canonical: `https://iraady.com${pathname}`, main: l.main });
     return send(res, 200, html, TYPES['.html'], { 'Cache-Control': 'no-cache' });
   }
+  // ---- v2 (redesign, side by side with v1 until the switch) ----
+  if (pathname === '/v2' || pathname === '/v2/') {
+    return send(res, 200, renderV2.home(await content()), TYPES['.html'], { 'Cache-Control': 'no-cache', 'X-Robots-Tag': 'noindex' });
+  }
+  if (pathname === '/v2/admin' || pathname.startsWith('/v2/admin/')) {
+    res.setHeader('X-Robots-Tag', 'noindex');
+    const asset = pathname.startsWith('/v2/admin/') && within(PUBLIC, pathname);
+    if (asset && /\.(js|css|svg)$/.test(pathname) && (await serveFile(res, asset, 'no-cache'))) return;
+    return serveFile(res, path.join(PUBLIC, 'v2', 'admin', 'index.html'), 'no-cache');
+  }
   if (pathname === '/projects.json') {
     return json(res, 200, (await content()).projects || [], { 'Cache-Control': 'public, max-age=300' });
   }
@@ -326,12 +337,15 @@ async function handle(req, res) {
 (async () => {
   await store.init();
   await loadLegal();
-  http.createServer((req, res) => {
+  const server = http.createServer((req, res) => {
     handle(req, res).catch((err) => {
       const status = err.status || 500;
       if (status >= 500) console.error(err);
       if (!res.headersSent) json(res, status, { error: status >= 500 ? 'Something went wrong' : err.message });
       else res.end();
     });
-  }).listen(PORT, () => console.log('iraady.com listening on', PORT));
+  });
+  // HOST is optional (local testing on 127.0.0.1); unset = listen on all interfaces as before.
+  if (process.env.HOST) server.listen(PORT, process.env.HOST, () => console.log('iraady.com listening on', process.env.HOST + ':' + PORT));
+  else server.listen(PORT, () => console.log('iraady.com listening on', PORT));
 })();
