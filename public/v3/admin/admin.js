@@ -804,7 +804,7 @@
 
   // theme (dark by default, own key) and collapsible sidebar
   function toggleTheme() {
-    var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
     store('iraady-v3-admin-theme', next);
   }

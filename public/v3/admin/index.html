@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Command centre · Iraady</title>
+<title>Dashboard, Iraady</title>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<script>try{if(localStorage.getItem('iraady-v3-admin-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
-<link rel="preload" href="/v3/fonts/inter-tight-var.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('iraady-v3-admin-theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<link rel="preload" href="/v3/fonts/instrument-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/v3/fonts/anybody-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/v3/admin/admin.css">
 </head>
 <body class="ad">
   <div id="login" class="login hidden">
     <div class="login-art" aria-hidden="true">
-      <p class="serif login-quote">Every enquiry, order and word on <em>iraady.com</em>, in one place.</p>
-      <p class="mono login-meta">Iraady Ltd · London · Kigali</p>
+      <p class="login-quote">Run iraady.com from one place.</p>
+      <p class="login-meta">Enquiries, orders, products and every word on the site.</p>
     </div>
     <form class="login-card" id="loginForm">
-      <a class="brand" href="/v3"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 22c8-6 14 0 20 8 4 6 10 8 16 9" stroke="#2E3192"/><path d="M12 6c4 10 12 22 28 33" stroke="#29ABE2"/><path d="M24 9c2 10 6 20 16 30" stroke="#F2C811"/><path d="M33 14c1 9 3 17 7 25" stroke="#1E9E4A"/></svg><span>Iraady</span><span class="brand-sub mono">Command centre</span></a>
+      <a class="brand" href="/v3"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 22c8-6 14 0 20 8 4 6 10 8 16 9" stroke="#2E3192"/><path d="M12 6c4 10 12 22 28 33" stroke="#29ABE2"/><path d="M24 9c2 10 6 20 16 30" stroke="#F2C811"/><path d="M33 14c1 9 3 17 7 25" stroke="#1E9E4A"/></svg><span>Iraady</span><span class="brand-sub">Dashboard</span></a>
       <h1 class="serif">Sign in</h1>
       <div id="loginError" class="alert hidden" role="alert"></div>
       <label>Email<input type="email" name="email" autocomplete="username" required></label>
       <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
       <button class="btn btn-primary btn-lg" type="submit">Sign in</button>
-      <p class="muted small">The same account as /admin and /v2/admin.</p>
+      <p class="muted small">Use the same account as the other dashboards.</p>
     </form>
   </div>
 
