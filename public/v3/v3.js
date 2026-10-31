@@ -14,6 +14,9 @@
   var shot = document.getElementById('heroImg');
   var hostEl = document.getElementById('heroHost');
   var cap = document.getElementById('heroCap');
+  var link = document.getElementById('heroLink');
+  var bar = document.getElementById('heroBar');
+  var pauseBtn = document.getElementById('heroPause');
   var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-pick]'));
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var current = 0;
@@ -43,6 +46,7 @@
     if (!reduce) { word.classList.remove('swap'); void word.offsetWidth; word.classList.add('swap'); }
     line.textContent = p.line;
     demo.href = p.url;
+    if (link) { link.href = p.url; link.setAttribute('aria-label', 'Open ' + p.name); }
     demo.textContent = 'Try ' + p.name;
     hostEl.textContent = p.host;
     cap.textContent = p.name + ', a live demo with sample data';
@@ -52,8 +56,35 @@
     if (focus) buttons[i].focus();
   }
 
+  // slides: move to the next organisation every few seconds
+  var DELAY = 4200, timer = null, paused = false, hold = false;
+  function restartBar() {
+    if (!bar) return;
+    bar.style.transition = 'none'; bar.style.width = '0%'; void bar.offsetWidth;
+    if (!paused && !hold) { bar.style.transition = 'width ' + DELAY + 'ms linear'; bar.style.width = '100%'; }
+  }
+  function schedule() {
+    clearTimeout(timer);
+    restartBar();
+    if (paused || hold) return;
+    timer = setTimeout(function () { show((current + 1) % picks.length); schedule(); }, DELAY);
+  }
+  function setPaused(v) {
+    paused = v;
+    if (pauseBtn) { pauseBtn.setAttribute('aria-pressed', String(v)); pauseBtn.textContent = v ? 'Play' : 'Pause'; }
+    schedule();
+  }
+  if (pauseBtn) pauseBtn.addEventListener('click', function () { setPaused(!paused); });
+  // hold while someone is reading or pointing at the hero
+  hero.addEventListener('mouseenter', function () { hold = true; schedule(); });
+  hero.addEventListener('mouseleave', function () { hold = false; schedule(); });
+  hero.addEventListener('focusin', function () { hold = true; schedule(); });
+  hero.addEventListener('focusout', function () { hold = false; schedule(); });
+  document.addEventListener('visibilitychange', function () { hold = document.hidden; schedule(); });
+  schedule();
+
   buttons.forEach(function (b, i) {
-    b.addEventListener('click', function () { show(i); });
+    b.addEventListener('click', function () { show(i); setPaused(true); });
     b.addEventListener('keydown', function (e) {
       var j = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : null;
       if (j === null) return;
@@ -63,5 +94,5 @@
   });
   // the big word itself moves to the next organisation
   word.style.cursor = 'pointer';
-  word.addEventListener('click', function () { show((current + 1) % picks.length); });
+  word.addEventListener('click', function () { show((current + 1) % picks.length); setPaused(true); });
 })();
