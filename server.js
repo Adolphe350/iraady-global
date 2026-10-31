@@ -17,6 +17,7 @@ const store = require('./lib/store');
 const auth = require('./lib/auth');
 const render = require('./lib/render');
 const renderV2 = require('./lib/render-v2');
+const renderV3 = require('./lib/render-v3');
 
 const PORT = Number(process.env.PORT) || 80;
 const PUBLIC = path.join(__dirname, 'public');
@@ -302,6 +303,16 @@ async function handle(req, res) {
   // ---- v2 (redesign, side by side with v1 until the switch) ----
   if (pathname === '/v2' || pathname === '/v2/') {
     return send(res, 200, renderV2.home(await content()), TYPES['.html'], { 'Cache-Control': 'no-cache', 'X-Robots-Tag': 'noindex' });
+  }
+  // ---- v3 (new dark editorial design, side by side with v1/v2 until the switch) ----
+  if (pathname === '/v3' || pathname === '/v3/') {
+    return send(res, 200, renderV3.home(await content()), TYPES['.html'], { 'Cache-Control': 'no-cache', 'X-Robots-Tag': 'noindex' });
+  }
+  if (pathname === '/v3/admin' || pathname.startsWith('/v3/admin/')) {
+    res.setHeader('X-Robots-Tag', 'noindex');
+    const asset = pathname.startsWith('/v3/admin/') && within(PUBLIC, pathname);
+    if (asset && /\.(js|css|svg)$/.test(pathname) && (await serveFile(res, asset, 'no-cache'))) return;
+    return serveFile(res, path.join(PUBLIC, 'v3', 'admin', 'index.html'), 'no-cache');
   }
   if (pathname === '/v2/admin' || pathname.startsWith('/v2/admin/')) {
     res.setHeader('X-Robots-Tag', 'noindex');
