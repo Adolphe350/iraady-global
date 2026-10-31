@@ -8,6 +8,7 @@
   if (!hero || !picks.length) return;
 
   var word = document.getElementById('heroWord');
+  var mk = document.getElementById('heroMk');
   var line = document.getElementById('heroLine');
   var demo = document.getElementById('heroDemo');
   var shot = document.getElementById('heroImg');
@@ -19,7 +20,7 @@
 
   // keep the big word on one line: shrink it to fit the column
   function fit() {
-    var max = window.innerWidth < 640 ? 64 : 116, min = 34;
+    var max = window.innerWidth < 640 ? 60 : 104, min = 32;
     word.style.setProperty('--word-size', max + 'px');
     var avail = word.parentNode.clientWidth;
     var need = word.scrollWidth;
@@ -37,7 +38,7 @@
     current = i;
     var p = picks[i];
     hero.setAttribute('data-tone', p.tone);
-    word.textContent = p.word;
+    mk.textContent = p.word;
     fit();
     if (!reduce) { word.classList.remove('swap'); void word.offsetWidth; word.classList.add('swap'); }
     line.textContent = p.line;
