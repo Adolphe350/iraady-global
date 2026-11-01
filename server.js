@@ -292,8 +292,12 @@ async function handle(req, res) {
   if (pathname.startsWith('/api/')) return publicApi(req, res, pathname);
   if (req.method !== 'GET' && req.method !== 'HEAD') return send(res, 405, 'Method not allowed');
 
+  // v2 is the default home page; the original design stays available at /v1
   if (pathname === '/' || pathname === '/index.html') {
-    return send(res, 200, render.home(await content()), TYPES['.html'], { 'Cache-Control': 'no-cache' });
+    return send(res, 200, renderV2.home(await content(), { root: true }), TYPES['.html'], { 'Cache-Control': 'no-cache' });
+  }
+  if (pathname === '/v1' || pathname === '/v1/') {
+    return send(res, 200, render.home(await content()), TYPES['.html'], { 'Cache-Control': 'no-cache', 'X-Robots-Tag': 'noindex' });
   }
   if (legal[pathname.slice(1)]) {
     const l = legal[pathname.slice(1)];
