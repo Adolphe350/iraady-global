@@ -10,6 +10,12 @@ services:
       - ADMIN_EMAIL=${ADMIN_EMAIL:-info@iraady.com}
       - ADMIN_PASSWORD=${ADMIN_PASSWORD}
       - SESSION_SECRET=${SESSION_SECRET}
+      # Contact form email via AWS SES (SES_* keys come from Coolify env, not committed)
+      - SES_REGION=${SES_REGION:-us-east-1}
+      - SES_ACCESS_KEY_ID=${SES_ACCESS_KEY_ID}
+      - SES_SECRET_ACCESS_KEY=${SES_SECRET_ACCESS_KEY}
+      - MAIL_FROM=${MAIL_FROM:-Iraady Website <info@iraady.com>}
+      - MAIL_TO=${MAIL_TO:-info@iraady.com}
     volumes:
       - iraady-data:/data
 

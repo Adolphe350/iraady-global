@@ -42,20 +42,44 @@
     });
   });
 
-  // ---- contact form: keep a copy for the dashboard, then the usual email via formsubmit ----
+  // ---- contact form: send to our own backend, which stores it AND emails via AWS SES ----
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('button[type="submit"]');
+      var original = btn.textContent;
       btn.disabled = true;
       btn.textContent = 'Sending…';
       var data = {};
       new FormData(form).forEach(function (v, k) { data[k] = v; });
-      var done = function () { HTMLFormElement.prototype.submit.call(form); };
-      fetch('/api/enquiries', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data), keepalive: true })
-        .then(done, done);
+      fetch('/api/enquiries', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok) {
+            form.innerHTML = '<div class="form-ok" role="status"><h3>Thank you — your enquiry is in.</h3>' +
+              '<p>Iraady Ltd replies within one working day from London or Kigali. ' +
+              'For anything urgent, email <a href="mailto:info@iraady.com">info@iraady.com</a>.</p></div>';
+          } else {
+            btn.disabled = false; btn.textContent = original;
+            showFormError(form, (res.j && res.j.error) || 'Could not send. Please email info@iraady.com.');
+          }
+        })
+        .catch(function () {
+          btn.disabled = false; btn.textContent = original;
+          showFormError(form, 'Network problem. Please email info@iraady.com.');
+        });
     });
+  }
+  function showFormError(form, msg) {
+    var box = form.querySelector('.form-err');
+    if (!box) {
+      box = document.createElement('p');
+      box.className = 'form-err';
+      box.setAttribute('role', 'alert');
+      form.appendChild(box);
+    }
+    box.textContent = msg;
   }
 
   // ---- source-code checkout (Flutterwave) ----
