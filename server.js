@@ -18,6 +18,7 @@ const auth = require('./lib/auth');
 const render = require('./lib/render');
 const renderV2 = require('./lib/render-v2');
 const renderV3 = require('./lib/render-v3');
+const mailer = require('./lib/mailer');
 
 const PORT = Number(process.env.PORT) || 80;
 const PUBLIC = path.join(__dirname, 'public');
@@ -252,7 +253,23 @@ async function publicApi(req, res, pathname) {
     };
     if (!e.name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e.email) || !e.message) return json(res, 400, { error: 'Name, a valid email and a message are needed.' });
     await store.update('enquiries', [], (list) => { list.push(e); return list.slice(-5000); });
-    return json(res, 201, { ok: true });
+    // Email the team via AWS SES (best-effort: the enquiry is already stored above).
+    const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const rows = [
+      ['Name', e.name], ['Email', e.email], ['Phone', e.phone], ['Company', e.company],
+      ['Budget', e.budget], ['Timeline', e.timeline], ['Source', e.source],
+    ].filter(([, v]) => v).map(([k, v]) => `<tr><td style="padding:4px 10px;color:#586376"><b>${k}</b></td><td style="padding:4px 10px">${esc(v)}</td></tr>`).join('');
+    const html = `<h2 style="font-family:system-ui,sans-serif">New enquiry from iraady.com</h2>` +
+      `<table style="border-collapse:collapse;font-family:system-ui,sans-serif;font-size:14px">${rows}</table>` +
+      `<p style="font-family:system-ui,sans-serif;font-size:14px;margin-top:14px"><b>Message</b><br>${esc(e.message).replace(/\n/g, '<br>')}</p>`;
+    const text = `New enquiry from iraady.com\n\nName: ${e.name}\nEmail: ${e.email}\nPhone: ${e.phone}\nCompany: ${e.company}\nBudget: ${e.budget}\nTimeline: ${e.timeline}\nSource: ${e.source}\n\nMessage:\n${e.message}`;
+    let emailed = false;
+    try {
+      const r = await mailer.sendEmail({ subject: `New enquiry from iraady.com — ${e.name}`, html, text, replyTo: e.email });
+      emailed = !!r.ok;
+      if (!r.ok && !r.skipped) console.error('[enquiry] SES send failed:', r.error);
+    } catch (err) { console.error('[enquiry] SES send threw:', err && err.message); }
+    return json(res, 201, { ok: true, emailed });
   }
 
   if (pathname === '/api/orders' && req.method === 'POST') {

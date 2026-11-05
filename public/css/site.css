@@ -341,6 +341,10 @@ input:focus, select:focus, textarea:focus { border-color: var(--accent); box-sha
 textarea { resize: vertical; }
 .form-note { font-size: .82rem; color: var(--muted); }
 .form-note a { color: var(--accent); }
+.form-ok { text-align: center; padding: 18px 6px; }
+.form-ok h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.form-ok p { color: var(--muted); font-size: .95rem; }
+.form-err { color: #B42318; font-size: .9rem; font-weight: 600; margin-top: 4px; }
 
 /* about */
 .about { border-top: 1px solid var(--line); }
