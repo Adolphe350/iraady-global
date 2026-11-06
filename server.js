@@ -321,6 +321,10 @@ async function handle(req, res) {
     const html = render.page(await content(), { title: `${l.title} — Iraady Ltd`, description: `${l.title} for Iraady Ltd.`, canonical: `https://iraady.com${pathname}`, main: l.main });
     return send(res, 200, html, TYPES['.html'], { 'Cache-Control': 'no-cache' });
   }
+  // Support hub for all Iraady apps (static, no JavaScript needed). /support#<app> anchors.
+  if (pathname === '/support' || pathname === '/support/') {
+    if (await serveFile(res, path.join(PUBLIC, 'support.html'), 'no-cache')) return;
+  }
   // ---- v2 (redesign, side by side with v1 until the switch) ----
   if (pathname === '/v2' || pathname === '/v2/') {
     return send(res, 200, renderV2.home(await content()), TYPES['.html'], { 'Cache-Control': 'no-cache', 'X-Robots-Tag': 'noindex' });
